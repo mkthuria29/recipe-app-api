@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> {% block title %}{% endblock %} Blog App</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.2/css/bulma.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/">
+                    <strong> Blog App</strong>
+                </a>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item is-active">
+                        Home
+                    </a>
+                    <a class="navbar-item">
+                        Examples
+                    </a>
+                    <a class="navbar-item">
+                        Features
+                    </a>
+                    <a class="navbar-item">
+                        Team
+                    </a>
+                    <a class="navbar-item">
+                        Archives
+                    </a>
+                    <a class="navbar-item">
+                        Help
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Account
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Dashboard
+                            </a>
+                            <a class="navbar-item">
+                                Profile
+                            </a>
+                            <a class="navbar-item">
+                                Settings
+                            </a>
+                            <hr class="navbar-divider">
+                            <div class="navbar-item">
+                                Logout
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container has-text-centered">
+            <p> Copyright (c) 2024 - Blog App by Mamta Kathuria</p>
+        </div>
+    </footer>
+</body>
+
+</html>
