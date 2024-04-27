@@ -1,2 +1,2 @@
-# recipe-app-api
+# Blog post portal
 Recipe app API source code.
